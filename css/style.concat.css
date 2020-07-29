@@ -21,6 +21,7 @@ body {
   padding: 3px .5rem;
   font-size: 2rem;
   border-radius: 10px;
+  border: solid 1px #333;
   transition: all .2s; }
   .btn:hover {
     font-weight: bold;
@@ -73,7 +74,8 @@ body {
     display: inline-block;
     width: 50%;
     height: 50%;
-    margin-bottom: 12%; }
+    margin-bottom: 12%;
+    padding-top: 10%; }
     .main-container__links img {
       float: right;
       margin-left: 70%;
