@@ -82,7 +82,8 @@ body {
     color: #ffffe6;
     padding-left: 4%;
     padding-top: 10%;
-    font-size: 2rem; }
+    font-size: 2rem;
+    padding-bottom: 5vh; }
     .main-container__address:hover {
       text-decoration: underline; }
   .main-container__links {
