@@ -36,7 +36,7 @@ body {
 
 .main-container {
   height: calc(100vh - 8vh - env(safe-area-inset-bottom));
-  background-image: linear-gradient(to bottom, transparent, transparent 80%, #000 90%), url("../img/sfondo1.jpg");
+  background-image: linear-gradient(to bottom, transparent, transparent 70%, #000 80%), url("../img/sfondo1.jpg");
   background-size: cover; }
   .main-container__title {
     display: inline-block;
@@ -65,7 +65,7 @@ body {
     display: block;
     color: #ffffe6;
     padding-left: 4%;
-    padding-top: 13%;
+    padding-top: 10%;
     font-size: 2rem; }
     .main-container__address:hover {
       text-decoration: underline; }
