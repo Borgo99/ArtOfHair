@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 font-family: 'Amatic SC', cursive;
 font-family: 'Open Sans', sans-serif;
@@ -34,6 +33,11 @@ body {
     font-weight: bold;
     transform: scale(1.1);
     background-color: #ffffcc; }
+  .btn:active {
+    transform: scale(1.03); }
+  @media only screen and (min-width: 64em) {
+    .btn {
+      font-size: 3rem; } }
 
 .table {
   text-align: center; }
@@ -49,11 +53,27 @@ body {
   .header .header__logo {
     height: 100%;
     padding: 1.5vh; }
+  @media only screen and (min-width: 34.5em) {
+    .header {
+      height: calc(8.8vh); } }
+  @media only screen and (min-width: 50em) {
+    .header {
+      height: calc(9.6vh); } }
+  @media only screen and (min-width: 64em) {
+    .header {
+      height: calc(12.8vh); } }
 
 .main-container {
   height: calc(100vh - 8vh - env(safe-area-inset-bottom));
   background-image: linear-gradient(to bottom, transparent, transparent 60%, #000 75%), url("../img/sfondo1.jpg");
   background-size: cover; }
+  @media only screen and (min-width: 34.5em) {
+    .main-container {
+      background-image: linear-gradient(to bottom, transparent, transparent 70%, #000 85%), url("../img/sfondo1.jpg");
+      background-position: center; } }
+  @media only screen and (min-width: 64em) {
+    .main-container {
+      background-image: linear-gradient(to bottom, transparent, transparent 80%, #000 90%), url("../img/sfondo1.jpg"); } }
   .main-container__title {
     display: inline-block;
     width: 48%;
@@ -61,22 +81,30 @@ body {
     font-size: 14rem;
     color: #ffffe6;
     text-transform: uppercase;
-    text-emphasis: bold;
     font-weight: 700;
     text-shadow: 3px 5px #000;
     line-height: 1;
     padding-left: 5%;
     padding-top: 10%; }
+    @media only screen and (min-width: 34.5em) {
+      .main-container__title {
+        padding-top: 0; } }
+    @media only screen and (min-width: 64em) {
+      .main-container__title {
+        padding-top: 7%;
+        font-size: 15.9rem; } }
   .main-container__subtitle {
     display: block;
     font-family: 'Amatic SC', cursive;
     font-size: 5rem;
     color: #ffffe6;
-    text-emphasis: bold;
     font-weight: 700;
     text-shadow: 2px 3px #000;
     padding-left: 4%;
     padding-top: 5%; }
+    @media only screen and (min-width: 64em) {
+      .main-container__subtitle {
+        font-size: 7rem; } }
   .main-container__address {
     display: block;
     color: #ffffe6;
@@ -86,6 +114,14 @@ body {
     padding-bottom: 5vh; }
     .main-container__address:hover {
       text-decoration: underline; }
+    @media only screen and (min-width: 50em) {
+      .main-container__address {
+        padding-top: 8%; } }
+    @media only screen and (min-width: 64em) {
+      .main-container__address {
+        position: absolute;
+        bottom: 2vh;
+        padding-bottom: 0; } }
   .main-container__links {
     display: inline-block;
     width: 50%;
@@ -104,12 +140,32 @@ body {
       transition: all .2s; }
       .main-container__links img:hover {
         transform: scale(1.1) translateX(-6px); }
+      @media only screen and (min-width: 34.5em) {
+        .main-container__links img {
+          width: 20%; } }
+      @media only screen and (min-width: 50em) {
+        .main-container__links img {
+          width: 15%;
+          margin-bottom: 1.5rem; } }
+      @media only screen and (min-width: 64em) {
+        .main-container__links img {
+          width: 11%; } }
     .main-container__links__btn {
       float: right;
       margin-left: 25%;
       margin-right: 5%;
-      margin-bottom: 1rem;
-      display: block; }
+      display: block;
+      margin-bottom: 1rem; }
+      @media only screen and (min-width: 50em) {
+        .main-container__links__btn {
+          margin-left: 50%;
+          margin-bottom: 1.5rem; } }
+    @media only screen and (min-width: 50em) {
+      .main-container__links {
+        margin-bottom: 5%; } }
+    @media only screen and (min-width: 64em) {
+      .main-container__links {
+        position: absolute; } }
 
 .container-hours {
   position: absolute;
@@ -148,9 +204,20 @@ body {
       position: absolute;
       top: .3rem;
       right: 1.4rem;
-      margin: 0; }
+      margin: 0;
+      transition: all .4s; }
       .container-hours--table .close-table:hover {
-        color:   #b32400; }
+        color: #991f00;
+        transform: scale(1.1); }
+    @media only screen and (min-width: 50em) {
+      .container-hours--table {
+        width: 55%; }
+        .container-hours--table > * {
+          font-size: 2.4rem; }
+        .container-hours--table p {
+          font-size: 6rem; }
+        .container-hours--table .close-table {
+          font-size: 4rem; } }
   .container-hours:target {
     opacity: 1;
     z-index: 100; }
