@@ -35,7 +35,7 @@ body {
     padding: 1.5vh; }
 
 .main-container {
-  height: calc(100vh - 8vh);
+  height: calc(100vh - 8vh - env(safe-area-inset-bottom));
   background-image: linear-gradient(to bottom, transparent, transparent 80%, #000 90%), url("../img/sfondo1.jpg");
   background-size: cover; }
   .main-container__title {
@@ -73,8 +73,7 @@ body {
     display: inline-block;
     width: 50%;
     height: 50%;
-    margin-bottom: 12%;
-    margin-top: 20%; }
+    margin-bottom: 12%; }
     .main-container__links img {
       float: right;
       margin-left: 70%;
