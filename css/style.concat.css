@@ -10,22 +10,25 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden; }
   body a:link, body a:visited {
     text-decoration: none;
     color: unset; }
 
 .btn {
+  font-family: 'Amatic SC', cursive;
   background-color: #ffffe6;
   color: #000000;
   padding: 3px .5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   border-radius: 10px;
   border: solid 1px #333;
   transition: all .2s; }
   .btn:hover {
     font-weight: bold;
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    background-color: #ffffcc; }
 
 .header {
   height: 8vh;
@@ -37,7 +40,7 @@ body {
 
 .main-container {
   height: calc(100vh - 8vh - env(safe-area-inset-bottom));
-  background-image: linear-gradient(to bottom, transparent, transparent 70%, #000 80%), url("../img/sfondo1.jpg");
+  background-image: linear-gradient(to bottom, transparent, transparent 60%, #000 75%), url("../img/sfondo1.jpg");
   background-size: cover; }
   .main-container__title {
     display: inline-block;
