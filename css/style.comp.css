@@ -15,6 +15,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  background-color: black;
   overflow: hidden; }
   body a:link, body a:visited {
     text-decoration: none;
@@ -66,7 +67,8 @@ body {
 .main-container {
   height: calc(100vh - 8vh - env(safe-area-inset-bottom));
   background-image: linear-gradient(to bottom, transparent, transparent 60%, #000 75%), url("../img/sfondo1.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   @media only screen and (min-width: 34.5em) {
     .main-container {
       background-image: linear-gradient(to bottom, transparent, transparent 70%, #000 85%), url("../img/sfondo1.jpg");
