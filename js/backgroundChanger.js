@@ -10,8 +10,9 @@
 
         var $element = $('.main-container');
         $element.fadeOut(250, function(){
-            el.style.backgroundImage = "linear-gradient(to bottom, transparent, transparent 60%, #000 75%), url(\"../img/sfondo" 
-                + img + ".jpg\")"; 
+            /* el.style.backgroundImage = "linear-gradient(to bottom, transparent, transparent 60%, #000 75%), url(\"../img/sfondo" 
+                + img + ".jpg\")";  */
+            el.style.backgroundImage = "linear-gradient(to bottom, transparent, transparent 60%, #000 75%), url(\"../img/sfondo2.jpg\")";
         });
         $element.fadeIn(250);
 

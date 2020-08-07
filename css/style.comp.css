@@ -15,7 +15,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  background-color: black;
+  background-color: #222;
   overflow: hidden; }
   body a:link, body a:visited {
     text-decoration: none;
