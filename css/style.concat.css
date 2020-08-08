@@ -88,7 +88,7 @@ body {
   transition: 5s;
   animation-name: changeBackground;
   animation-iteration-count: infinite;
-  animation-duration: 25s;
+  animation-duration: 32s;
   animation-delay: 1s;
   animation-fill-mode: forwards; }
   @media only screen and (min-width: 34.5em) {
