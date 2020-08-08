@@ -2,6 +2,22 @@
 font-family: 'Amatic SC', cursive;
 font-family: 'Open Sans', sans-serif;
 */
+@keyframes changeBackground {
+  0% {
+    background-image: url("../img/sfondo1.jpg"); }
+  16% {
+    background-image: url("../img/sfondo2.jpg"); }
+  32% {
+    background-image: url("../img/sfondo3.jpg"); }
+  48% {
+    background-image: url("../img/sfondo4.jpg"); }
+  64% {
+    background-image: url("../img/sfondo5.jpg"); }
+  80% {
+    background-image: url("../img/sfondo6.jpg"); }
+  100% {
+    background-image: url("../img/sfondo1.jpg"); } }
+
 *,
 *::after,
 *::before {
@@ -66,9 +82,15 @@ body {
 
 .main-container {
   height: calc(100vh - 8vh - env(safe-area-inset-bottom));
-  background-image: linear-gradient(to bottom, transparent, transparent 60%, #000 75%), url("../img/sfondo1.jpg");
+  background-image: url("../img/sfondo1.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  transition: 5s;
+  animation-name: changeBackground;
+  animation-iteration-count: infinite;
+  animation-duration: 25s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards; }
   @media only screen and (min-width: 34.5em) {
     .main-container {
       background-image: linear-gradient(to bottom, transparent, transparent 70%, #000 85%), url("../img/sfondo1.jpg");
@@ -76,6 +98,11 @@ body {
   @media only screen and (min-width: 64em) {
     .main-container {
       background-image: linear-gradient(to bottom, transparent, transparent 80%, #000 90%), url("../img/sfondo1.jpg"); } }
+  .main-container--filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, transparent 60%, #000 75%); }
   .main-container__title {
     display: inline-block;
     width: 48%;
